@@ -1,4 +1,5 @@
 import {headerLogo} from '../assets/images'
+import {hamburger} from '../assets/icons'
 
 const Nav = () => {
   return (
@@ -8,6 +9,7 @@ const Nav = () => {
             <img
             src = {headerLogo}
         />
+        <img src ={hamburger}/>
             </nav>
     </header>
   )
