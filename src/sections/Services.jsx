@@ -1,7 +1,15 @@
+import { services } from '../constants/index.js'; // or './index.js'
+import ServiceCard from '../components/ServiceCard.jsx';
+
+
 const Services = () => {
   return (
-    <div>Services</div>
-  )
-}
+    <section className='max-container flex justify-center flex-wrap gap-9'>
+      {services.map((service) => (
+        <ServiceCard key={service.label} {...service} />
+      ))}
+    </section>
+  );
+};
 
-export default Services
+export default Services;
